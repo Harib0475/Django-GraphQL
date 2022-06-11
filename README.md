@@ -1,6 +1,7 @@
 
 
-#Delete a Book
+# Delete a Book
+
 mutation {
   delete_book: deleteBook(id:7){
     book {
@@ -9,7 +10,7 @@ mutation {
   }
 }
 
-#Update a Book
+# Update a Book
 mutation {
   update_book: updateBook(input: {title:"Imagine this updated",author: "Shola", pages: 12, price: 1200, quantity: 4, description:"a brief description", status: "True"}
   ,id:5){
@@ -26,7 +27,7 @@ mutation {
   }
 }
 
-#Create a Book
+# Create a Book
 mutation {
   update_book: createBook(input: {title:"Imagine this updated 1",author: "Shola", pages: 12, price: 1200, quantity: 4, description:"a brief description", status: "True"}){
     book {
@@ -42,7 +43,7 @@ mutation {
   }
 }
 
-#Create Category
+# Create Category
 mutation {
  create_category:createCategory(title :"Plastic") {
   category {
@@ -54,7 +55,7 @@ mutation {
 
 
 
-#Get all books list witth details
+# Get all books list witth details
 {
   books{
       id
